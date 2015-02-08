@@ -13,7 +13,7 @@ public class Shoot : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetButtonDown ("Fire1")) {
-			Instantiate (bullet, transform.position, transform.rotation);
+			Instantiate (bullet, transform.position + new Vector3(0.0f, 0.0f, 2.0f), transform.rotation);
 		}
 	}
 }
