@@ -9,6 +9,7 @@ public class GibOnTrigger : MonoBehaviour {
 		if (gib != null) {
 			Instantiate (gib, transform.position, Quaternion.identity);
 		}
+		SendMessage("Death");
 		Destroy (gameObject);
 	}
 }
