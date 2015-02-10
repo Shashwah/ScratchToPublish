@@ -16,16 +16,17 @@ public class SpawnTowers : MonoBehaviour {
 		choice1.y = transform.position.y - choice1.y;
 		choice2.x = transform.position.x - choice2.x;
 		choice2.y = transform.position.y - choice2.y;
+		actualSpawnTime = spawnTimeOffset / 3;
 	}
 
 	// Update is called once per frame
 	void Update () {
 		if (actualSpawnTime == 0 && choiceLoop == 0) {
-			Instantiate (tower, new Vector3 (choice1.x, choice1.y, 50.0f), Quaternion.identity);
+			Instantiate (tower, new Vector3 (choice1.x, transform.position.y, 50.0f), Quaternion.identity);
 			actualSpawnTime = spawnTimeOffset;
 			choiceLoop = 1;
 		} else if (actualSpawnTime == 0 && choiceLoop == 1) {
-			Instantiate (tower, new Vector3 (choice2.x, choice2.y, 50.0f), Quaternion.identity);
+			Instantiate (tower, new Vector3 (choice2.x, transform.position.y, 50.0f), Quaternion.identity);
 			actualSpawnTime = spawnTimeOffset;
 			choiceLoop = 0;
 		} else {
