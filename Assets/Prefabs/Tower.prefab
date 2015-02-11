@@ -13,7 +13,8 @@ GameObject:
   - 23: {fileID: 2317512}
   - 114: {fileID: 11417512}
   - 54: {fileID: 5494938}
-  - 114: {fileID: 11472198}
+  - 114: {fileID: 11419816}
+  - 114: {fileID: 11466866}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -45,7 +46,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: cb236cd67b47e48308b3fea38d425d9e, type: 2}
+  - {fileID: 2100000, guid: 6fa567b54088e4847ab72a293c66bc05, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -88,7 +89,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0, z: -1}
   speed: 20
---- !u!114 &11472198
+--- !u!114 &11419816
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 675a140971c2e4eccb650c6277576bb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: -40
+--- !u!114 &11466866
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -99,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f65cb900286c4745a4e281f50bc60d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathPosition: {x: 1000, y: 1000, z: -60}
+  deathPosition: {x: 0, y: 0, z: -60}
 --- !u!136 &13617512
 CapsuleCollider:
   m_ObjectHideFlags: 1
