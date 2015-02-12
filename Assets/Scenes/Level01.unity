@@ -208,7 +208,7 @@ Transform:
   m_GameObject: {fileID: 507660487}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 1}
+  m_LocalScale: {x: 200, y: 200, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -266,8 +266,8 @@ MonoBehaviour:
   spawnObject: {fileID: 117512, guid: c64750aa49eba476a96863c589208a2f, type: 2}
   minHorizontal: -50
   maxHorizontal: 50
-  minSpawnTime: 1
-  maxSpawnTime: 1
+  minSpawnTime: .300000012
+  maxSpawnTime: .300000012
 --- !u!4 &865050896
 Transform:
   m_ObjectHideFlags: 0
@@ -427,7 +427,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: cb236cd67b47e48308b3fea38d425d9e, type: 2}
+  - {fileID: 2100000, guid: 48cacfe861b6543dab07f39bb55a626a, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -462,8 +462,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1221835903}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
-  m_LocalPosition: {x: 0, y: -5, z: -2.61999989}
-  m_LocalScale: {x: 100, y: 100, z: 1}
+  m_LocalPosition: {x: 0, y: -5, z: 0}
+  m_LocalScale: {x: 200, y: 200, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
